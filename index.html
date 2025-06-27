@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM UNG</title>
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta property="og:url" content="https://bemung.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:site_name"
+      content="Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo"
+    />
+    <meta property="og:title" content="BEM UNG" />
+    <meta
+      property="og:description"
+      content="Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan organisasi mahasiswa tingkat universitas yang bertugas mengkoordinasikan dan melaksanakan program kerja kemahasiswaan."
+    />
+    <meta
+      property="og:image"
+      content="https://bemung.vercel.app/assets/logo.jpg"
+    />
+
+    <meta property="twitter:url" content="https://bemung.vercel.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BEM UNG" />
+    <meta
+      name="twitter:description"
+      content="Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan organisasi mahasiswa tingkat universitas yang bertugas mengkoordinasikan dan melaksanakan program kerja kemahasiswaan."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bemung.vercel.app/assets/logo.jpg"
+    />
+
+    <meta itemprop="name" content="BEM UNG" />
+    <meta
+      itemprop="description"
+      content="Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan organisasi mahasiswa tingkat universitas yang bertugas mengkoordinasikan dan melaksanakan program kerja kemahasiswaan."
+    />
+    <meta
+      itemprop="image"
+      content="https://bemung.vercel.app/assets/logo.jpg"
+    />
+
+    <meta
+      name="description"
+      content="Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan organisasi mahasiswa tingkat universitas yang bertugas mengkoordinasikan dan melaksanakan program kerja kemahasiswaan."
+    />
+    <meta name="author" content="Alif Bima Pradana" />
+    <meta
+      name="keywords"
+      content="bemung,gorontalo,mahasiswa,badan ekesekutif mahasiswa"
+    />
+
+    <meta name="theme-color" content="#5e0101" />
+    <!-- custom Verifikasi bing -->
+    <meta name="msvalidate.01" content="D961D6A394951D16ECC39A0DFA9CCF81" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#800000",
+              secondary: "#FFD700",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://yt3.googleusercontent.com/aWome6ceFs-pDEzsp0b3gHXcPp-DWuOeh-FwMfuzJTa6sc2wUvf0YPQHn1XaCJ1tBDrgPHo_Mw=s72-c-k-c0x00ffffff-no-rj"
+              alt="Logo BEM UNG"
+              class="h-12 rounded-lg"
+            />
+            <div>
+              <h1 class="font-bold text-xl">BEM UNG</h1>
+              <p class="text-xs text-gray-200">Badan Eksekutif Mahasiswa</p>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button
+              class="border border-1 border-slate-400 py-2 px-2 rounded-lg mobile-menu-button"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-secondary transition duration-300"
+              >Beranda</a
+            >
+            <a
+              href="#about"
+              class="hover:text-secondary transition duration-300"
+              >Tentang</a
+            >
+            <a
+              href="#structure"
+              class="hover:text-secondary transition duration-300"
+              >Struktur</a
+            >
+            <a href="#team" class="hover:text-secondary transition duration-300"
+              >Kabinet</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-secondary transition duration-300"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu / Sidebar -->
+      <div
+        class="hidden mobile-menu fixed inset-y-0 right-0 w-64 bg-primary text-white shadow-lg z-50 transform transition-transform duration-300 translate-x-full"
+      >
+        <div class="flex justify-end p-4">
+          <button class="mobile-close-button outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="px-8 py-4 flex flex-col space-y-4">
+          <a
+            href="#home"
+            class="block py-3 text-lg hover:text-secondary transition duration-300"
+            >Beranda</a
+          >
+          <a
+            href="#about"
+            class="block py-3 text-lg hover:text-secondary transition duration-300"
+            >Tentang</a
+          >
+          <a
+            href="#structure"
+            class="block py-3 text-lg hover:text-secondary transition duration-300"
+            >Struktur</a
+          >
+          <a
+            href="#team"
+            class="block py-3 text-lg hover:text-secondary transition duration-300"
+            >Kabinet</a
+          >
+          <a
+            href="#contact"
+            class="block py-3 text-lg hover:text-secondary transition duration-300"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-12 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 text-center md:text-left">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4">BEM UNG</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+              Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo
+            </h2>
+            <p class="text-lg md:text-xl mb-8">
+              Mewujudkan mahasiswa yang berkarakter, kreatif, inovatif, dan
+              berdaya saing di era global
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                href="#about"
+                class="bg-secondary text-primary font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition duration-300"
+                >Tentang Kami</a
+              >
+              <a
+                href="#contact"
+                class="border-2 border-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-primary transition duration-300"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="BEM UNG"
+              class="rounded-bl-3xl rounded-tr-3xl border-8 border-[] shadow-xl w-full h-auto max-h-96 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Tentang BEM UNG</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan
+            organisasi mahasiswa tingkat universitas yang bertugas
+            mengkoordinasikan dan melaksanakan program kerja kemahasiswaan.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              alt="About BEM UNG"
+              class="rounded-lg shadow-xl w-full"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-primary mb-4">
+              Visi & Misi
+            </h3>
+            <div class="mb-6">
+              <h4 class="text-xl font-medium text-primary mb-2">Visi</h4>
+              <p class="text-gray-600">
+                "Mewujudkan BEM UNG yang profesional, berintegritas, dan berdaya
+                saing dalam mewadahi aspirasi mahasiswa serta menjadi mitra
+                strategis universitas."
+              </p>
+            </div>
+            <div>
+              <h4 class="text-xl font-medium text-primary mb-2">Misi</h4>
+              <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Membangun sistem organisasi yang efektif dan efisien</li>
+                <li>Meningkatkan kualitas sumber daya manusia mahasiswa</li>
+                <li>
+                  Memperkuat jaringan kemitraan dengan berbagai stakeholder
+                </li>
+                <li>
+                  Mengembangkan program kerja yang inovatif dan bermanfaat
+                </li>
+                <li>Menjadi wadah aspirasi mahasiswa yang responsif</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structure Section -->
+    <section id="structure" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Struktur Kabinet</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Struktur organisasi Badan Eksekutif Mahasiswa Universitas Negeri
+            Gorontalo periode 2023/2024
+          </p>
+        </div>
+
+        <div class="md:timeline">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Ketua & Wakil -->
+            <div class="space-y-6">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-4 top-4 text-4xl opacity-50 text-secondary"
+                >
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Ketua BEM</h3>
+                <p class="text-gray-600">Muhammad Rifki</p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-4 top-4 text-4xl opacity-50 text-secondary"
+                >
+                  <i class="fas fa-chess-queen"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  Wakil Ketua BEM
+                </h3>
+                <p class="text-gray-600">Nurul Hasanah</p>
+              </div>
+            </div>
+
+            <!-- Sekretaris & Bendahara -->
+            <div class="space-y-6">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-4 top-4 text-4xl opacity-50 text-secondary"
+                >
+                  <i class="fas fa-file-signature"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Sekretaris</h3>
+                <p class="text-gray-600">Andi Saputra</p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-4 top-4 text-4xl opacity-50 text-secondary"
+                >
+                  <i class="fas fa-coins"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-2">Bendahara</h3>
+                <p class="text-gray-600">Siti Rahma</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Departemen -->
+          <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-primary mb-4">Departemen</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4 class="font-semibold text-primary">Dep. Pendidikan</h4>
+                <p class="text-gray-600">Ahmad Fauzi</p>
+              </div>
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h4 class="font-semibold text-primary">
+                  Dep. Sosial Masyarakat
+                </h4>
+                <p class="text-gray-600">Dian Puspita</p>
+              </div>
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-running"></i>
+                </div>
+                <h4 class="font-semibold text-primary">Dep. Minat Bakat</h4>
+                <p class="text-gray-600">Rizky Pratama</p>
+              </div>
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <h4 class="font-semibold text-primary">Dep. Hubungan Luar</h4>
+                <p class="text-gray-600">Fitriani</p>
+              </div>
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h4 class="font-semibold text-primary">
+                  Dep. Media Komunikasi
+                </h4>
+                <p class="text-gray-600">Aditya Nugraha</p>
+              </div>
+              <div
+                class="bg-gray-50 border-2 border-slate-300 p-4 rounded-lg relative overflow-hidden"
+              >
+                <div
+                  class="absolute right-2 top-2 text-2xl opacity-60 text-primary"
+                >
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <h4 class="font-semibold text-primary">Dep. PO</h4>
+                <p class="text-gray-600">Rahmat hidayatullah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Berita Terkini</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Informasi terbaru seputar kegiatan BEM UNG
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- News Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+              alt="Kegiatan BEM"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span
+                  ><i class="far fa-calendar-alt mr-1"></i> 15 Oktober
+                  2023</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                BEM UNG Gelar Kegiatan Sosial di Desa Terpencil
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Program pengabdian masyarakat yang diikuti oleh seluruh pengurus
+                BEM UNG..
+              </p>
+              <a href="#" class="text-secondary font-semibold hover:underline"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+
+          <!-- News Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              alt="Diskusi Mahasiswa"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span
+                  ><i class="far fa-calendar-alt mr-1"></i> 10 Oktober
+                  2023</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Diskusi Publik Tentang Pendidikan Karakter Mahasiswa
+              </h3>
+              <p class="text-gray-600 mb-4">
+                BEM UNG sukses menyelenggarakan diskusi publik dengan
+                menghadirkan berbagai praktisi pendidikan ternama.
+              </p>
+              <a href="#" class="text-secondary font-semibold hover:underline"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+
+          <!-- News Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Pelantikan BEM"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span
+                  ><i class="far fa-calendar-alt mr-1"></i> 5 Oktober 2023</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Pelantikan Pengurus BEM UNG Periode 2023/2024
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Acara pelantikan pengurus baru BEM UNG berlangsung meriah di
+                Auditorium Universitas Negeri Gorontalo.
+              </p>
+              <a href="#" class="text-secondary font-semibold hover:underline"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+          <!-- News Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl"
+          >
+            <img
+              src="assets/ksl.jpg"
+              alt="Pelantikan BEM"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-2">
+                <span
+                  ><i class="far fa-calendar-alt mr-1"></i> 10 Oktober
+                  2025</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Kolaborasi dengan KSL UNG
+              </h3>
+              <p class="text-gray-600 mb-4">
+                BEM UNG Kolab dengan Kelompok studi Linux fakultas teknik
+                jurusan teknik inromatika
+              </p>
+              <a href="#" class="text-secondary font-semibold hover:underline"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="#"
+            class="inline-block bg-primary text-white font-bold px-6 py-3 rounded-lg hover:bg-primary-dark transition duration-300"
+          >
+            Lihat Semua Berita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Kabinet BEM UNG</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Tim inti yang bertanggung jawab menjalankan program kerja BEM UNG
+            periode 2023/2024
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-500 card-hover"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Ketua BEM"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2 md:text-lg">
+                Muhammad Rifki
+              </h3>
+              <p class="text-slate font-medium mb-4">Ketua</p>
+              <div class="flex mt-4 space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-500 card-hover"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Wakil Ketua BEM"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2 md:text-lg">
+                Nurul Hasanah
+              </h3>
+              <p class="text-slate font-medium mb-4">Wakil Ketua</p>
+              <div class="flex mt-4 space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-500 card-hover"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="Sekretaris BEM"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2 md:text-lg">
+                Andi Saputra
+              </h3>
+              <p class="text-slate font-medium mb-4">Sekretaris</p>
+              <div class="flex mt-4 space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-500 card-hover"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Bendahara BEM"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2 md:text-lg">
+                Siti Rahma
+              </h3>
+              <p class="text-slate font-medium mb-4">Bendahara</p>
+              <div class="flex mt-4 space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-primary hover:text-secondary"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Hubungi Kami</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Silakan hubungi kami untuk informasi lebih lanjut tentang kegiatan
+            dan program BEM UNG
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold text-primary mb-6">
+                Informasi Kontak
+              </h3>
+
+              <div class="flex items-start mb-6">
+                <div class="text-secondary mr-4 mt-1">
+                  <i class="fas fa-map-marker-alt text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Alamat</h4>
+                  <p class="text-gray-600">
+                    Gedung Student Center Lt. 2<br />Universitas Negeri
+                    Gorontalo<br />Jl. Jenderal Sudirman No.6, Gorontalo
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start mb-6">
+                <div class="text-secondary mr-4 mt-1">
+                  <i class="fas fa-envelope text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Email</h4>
+                  <p class="text-gray-600">bem@ung.ac.id</p>
+                </div>
+              </div>
+
+              <div class="flex items-start mb-6">
+                <div class="text-secondary mr-4 mt-1">
+                  <i class="fas fa-phone-alt text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Telepon</h4>
+                  <p class="text-gray-600">+62 812-3456-7890</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="text-secondary mr-4 mt-1">
+                  <i class="fas fa-clock text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Jam Operasional</h4>
+                  <p class="text-gray-600">Senin - Jumat: 08.00 - 16.00 WITA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold text-primary mb-6">Kirim Pesan</h3>
+              <form>
+                <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-medium mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    required
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    required
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="subject"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Subjek</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Pesan</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary-dark transition duration-300"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">BEM UNG</h3>
+            <p class="mb-4">
+              Badan Eksekutif Mahasiswa Universitas Negeri Gorontalo merupakan
+              organisasi mahasiswa tingkat universitas.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-secondary"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="hover:text-secondary"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-secondary"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-secondary"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Sitemap</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-secondary transition duration-300"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-secondary transition duration-300"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#structure"
+                  class="hover:text-secondary transition duration-300"
+                  >Struktur</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="hover:text-secondary transition duration-300"
+                  >Kabinet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-secondary transition duration-300"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Program Kerja</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-secondary transition duration-300"
+                  >Pendidikan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition duration-300"
+                  >Sosial Masyarakat</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition duration-300"
+                  >Minat Bakat</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition duration-300"
+                  >Hubungan Luar</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition duration-300"
+                  >Media Komunikasi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p class="mb-4">
+              Berlangganan newsletter kami untuk mendapatkan informasi terbaru
+              tentang kegiatan BEM UNG.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Email Anda"
+                class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-secondary text-primary px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-500 transition duration-300"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-primary-light mt-8 pt-8 text-center">
+          <p>
+            &copy; 2025 BEM UNG - Badan Eksekutif Mahasiswa Universitas Negeri
+            Gorontalo. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Navigation for Mobile -->
+    <div
+      class="md:hidden fixed bottom-0 left-0 right-0 bg-primary text-white shadow-lg z-50"
+    >
+      <div class="flex justify-around items-center py-3">
+        <a href="#home" class="flex flex-col items-center text-xs px-2">
+          <i class="fas fa-home text-xl mb-1"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="#structure" class="flex flex-col items-center text-xs px-2">
+          <i class="fas fa-sitemap text-xl mb-1"></i>
+          <span>Struktur</span>
+        </a>
+        <a href="#team" class="flex flex-col items-center text-xs px-2">
+          <i class="fas fa-users text-xl mb-1"></i>
+          <span>Kabinet</span>
+        </a>
+        <a href="#news" class="flex flex-col items-center text-xs px-2">
+          <i class="fas fa-newspaper text-xl mb-1"></i>
+          <span>Berita</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center text-xs px-2">
+          <i class="fas fa-envelope text-xl mb-1"></i>
+          <span>Kontak</span>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Mobile menu / Sidebar toggle
+      const btn = document.querySelector(".mobile-menu-button");
+      const closeBtn = document.querySelector(".mobile-close-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.remove("hidden");
+        setTimeout(() => {
+          menu.classList.remove("translate-x-full");
+        }, 10);
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.add("translate-x-full");
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        }, 300);
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("translate-x-full");
+          setTimeout(() => {
+            menu.classList.add("hidden");
+          }, 300);
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (!menu.classList.contains("hidden")) {
+              menu.classList.add("hidden");
+            }
+          }
+        });
+      });
+
+      // Timeline animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const timelineItems = document.querySelectorAll(".container-timeline");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateX(0)";
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        timelineItems.forEach((item) => {
+          item.style.opacity = "0";
+          if (item.classList.contains("left")) {
+            item.style.transform = "translateX(-50px)";
+          } else {
+            item.style.transform = "translateX(50px)";
+          }
+          item.style.transition = "all 0.5s ease";
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>
